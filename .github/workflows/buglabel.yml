@@ -26,7 +26,7 @@ jobs:
       - name: check issue title
         env:
           ISSUE_TITLE: ${{ toJson(github.event) }}
-        if: contains(github.event, 'bug')
+      #  if: contains(github.event, 'bug')
         run : echo "$ISSUE_TITLE - it's a bug!, Let's put 'bug' label"
 
 

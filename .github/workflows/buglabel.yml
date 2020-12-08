@@ -29,9 +29,6 @@ jobs:
         if: contains(github.event.issue.title, 'bug')
         run : | 
           echo "$ISSUE_TITLE - it's a bug!, Let's put 'bug' label"
-          npm install @actions/core
-          npm install @actions/github
-          npm install @octokit/rest
       
       - name : put label
         uses : ./

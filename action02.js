@@ -1,7 +1,7 @@
 import {Octokit} from "https://cdn.skypack.dev/@octokit/rest";
 
 const octokit = new Octokit({
-    auth: "d3e05ebbc4347b9252c091c308e43bc87a3c428c",
+    auth: github_token,
     userAgent: 'myApp v0.0.1',
     baseUrl: 'https://api.github.com'
     });

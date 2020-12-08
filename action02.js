@@ -1,4 +1,4 @@
-import {Octokit} from "https://cdn.skypack.dev/@octokit/rest";
+const { Octokit } = require("@octokit/rest");
 const core = require('@actions/core');
 const github = require('@actions/github');
 

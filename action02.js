@@ -9,8 +9,7 @@ const octokit = new Octokit({
     });
 
 
-
-await octokit.request('POST /repos/{owner}/{repo}/issues/{issue_number}/labels', {
+octokit.request('POST /repos/{owner}/{repo}/issues/{issue_number}/labels', {
     owner: 'company1111',
     repo: 'action-02',
     issue_number: core.getInput('issue_number'),

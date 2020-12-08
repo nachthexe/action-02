@@ -25,8 +25,11 @@ jobs:
       # Runs a single command using the runners shell
       - name: check issue title
         env:
-          ISSUE_TITLE: ${{ toJson(github.event) }}
-      #  if: contains(github.event, 'bug')
+          ISSUE_TITLE: ${{ toJson(github.event.issue.title) }}
+        if: contains(github.event.issue.title, 'bug')
         run : echo "$ISSUE_TITLE - it's a bug!, Let's put 'bug' label"
+      
+      - name : put label
+        run : ./action02.js
 
 

@@ -30,6 +30,9 @@ jobs:
         run : echo "$ISSUE_TITLE - it's a bug!, Let's put 'bug' label"
       
       - name : put label
-        run : ./action02.js
+        uses : ./
+        with: 
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          issue_number: ${{ github.event.issue.number }}
 
 

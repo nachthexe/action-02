@@ -1,0 +1,24 @@
+{
+  "name": "action-02",
+  "version": "1.0.0",
+  "description": "",
+  "main": "action02.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/company1111/action-02.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/company1111/action-02/issues"
+  },
+  "homepage": "https://github.com/company1111/action-02#readme",
+  "dependencies": {
+    "@actions/core": "^1.2.6",
+    "@actions/github": "^4.0.0",
+    "@octokit/rest": "^18.0.12"
+  }
+}

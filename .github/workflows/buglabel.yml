@@ -8,7 +8,6 @@ on:
   
   pull_request:
    branches:
-    - main
     - branch02
   # issues:
   # types: [opened, edited]

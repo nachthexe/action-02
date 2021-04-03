@@ -5,8 +5,11 @@ name: Put bug label
 # Controls when the action will run. 
 on:
   # Triggers the workflow on push or pull request events but only for the main branch
-  issues:
-   types: [opened, edited]
+  
+  pull_request:
+ 
+  # issues:
+  # types: [opened, edited]
 
   # Allows you to run this workflow manually from the Actions tab
   

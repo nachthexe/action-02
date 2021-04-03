@@ -12,8 +12,9 @@ on:
    branches:
     - main
     - branch02
+    - branch03
   # issues:
-  # types: [opened, edited]
+   # types: [opened, edited]
 
 
   # Allows you to run this workflow manually from the Actions tab

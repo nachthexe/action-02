@@ -6,10 +6,15 @@ name: Put bug label
 on:
   # Triggers the workflow on push or pull request events but only for the main branch
   
-#  pull_request:
- 
-   issues:
-    types: [opened, edited]
+
+
+  pull_request:
+   branches:
+    - main
+    - branch02
+  # issues:
+  # types: [opened, edited]
+
 
   # Allows you to run this workflow manually from the Actions tab
   
@@ -18,7 +23,9 @@ jobs:
   # This workflow contains a single job called "build"
   TTTEEEST-in-the-issue-title:
     # The type of runner that the job will run on
-    runs-on: windows
+
+    runs-on: windows-latest
+
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:

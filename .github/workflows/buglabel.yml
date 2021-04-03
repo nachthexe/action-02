@@ -7,14 +7,10 @@ on:
   # Triggers the workflow on push or pull request events but only for the main branch
   
 
-
-  pull_request:
-   branches:
-    - main
-    - branch02
-    - branch03
-  # issues:
-   # types: [opened, edited]
+  # pull_request:
+ 
+   issues:
+    types: [opened, edited]
 
 
   # Allows you to run this workflow manually from the Actions tab

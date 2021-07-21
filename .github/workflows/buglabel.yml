@@ -26,6 +26,17 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
 
+      - name: Use Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '12.x'
+          
+      - name: Install dependencies
+        run: |
+          npm install @actions/core
+          npm install @actions/github
+          npm install @octokit/rest
+
       # Runs a single command using the runners shell
       - name: check issue title
         env:
